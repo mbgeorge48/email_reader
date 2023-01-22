@@ -20,3 +20,8 @@ M.logout()
 
 with open('log_file.json', 'a') as f:
     json.dump(log, f, indent=4, ensure_ascii=False)
+
+
+# TODO Add readme with some instructions to setting up
+# TODO Add a date filter so only emails older than x days get marked as read
+# TODO Maybe append the new logs to the top of the log file?
