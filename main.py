@@ -33,5 +33,5 @@ for num in data[0].split():
 M.close()
 M.logout()
 
-with open('log_file.json', 'a') as f:
+with open('email_reader_log.json', 'a') as f:
     json.dump(log, f, indent=4, ensure_ascii=False)
