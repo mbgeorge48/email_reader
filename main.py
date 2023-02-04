@@ -2,6 +2,7 @@ import datetime
 import email
 import imaplib
 import json
+import os
 
 from config_reader import ConfigReader
 def parse_date(unformatted_date):
@@ -33,5 +34,5 @@ for num in data[0].split():
 M.close()
 M.logout()
 
-with open('log_file.json', 'a') as f:
+with open(os.path.join(config.log_file_path, 'log_file.json'), 'a') as f:
     json.dump(log, f, indent=4, ensure_ascii=False)
