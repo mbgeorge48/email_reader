@@ -6,7 +6,6 @@ class ConfigReader:
     def __init__(self):
         config_path = 'config.yml'
         self.config = self.read_yml_config(config_path)
-        self.log_file_path = self.config.get('log_file_path')
         self.imap_server = self.config.get('imap_server')
         self.imap_port = self.config.get('imap_port')
         self.gmail_username = self.config.get('gmail_username')

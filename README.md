@@ -5,7 +5,6 @@ Wanted to make this script to mark old emails as read, Gmail didn't have it buil
 To run it you need to create a `config.yml` file and put these variables in
 
 ```yaml
-log_file_path: ~/
 imap_server: imap.gmail.com
 imap_port: 993
 gmail_username: (Your Gmail address)
